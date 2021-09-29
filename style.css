@@ -26,18 +26,9 @@ a{
     width: 100%;
 }
 #Header{
-    /* background-repeat: no-repeat; */
-    /* background-image:url('head5.jpg'); */
     background-color: black;
     width: 100%; 
     height: 110px;
-    /* background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     box-shadow: 0 0 50px;
 }
 .header__logo{
@@ -61,7 +52,6 @@ a{
 }
 .menu{
     margin: 15px 15px 30px 15px; 
-    /* margin-bottom: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +68,6 @@ a{
 }
 .menu a{
      display: block; 
-     /* padding: 10px 10px; */
      font-family: 'Stick No Bills', sans-serif; 
 }
 .menu a span{
@@ -101,7 +90,7 @@ a{
 }
 .content__body{
     padding: 10px 10px 10px 30px;
-    margin: 15px 15px 0 15px; 
+    margin: 30px 15px 0 15px; 
     background-color: rgb(255, 112, 77,0.1);
     margin-bottom: 30px;
 }
@@ -109,21 +98,19 @@ a{
     background-color: rgb(255, 112, 77,0.7) ;
     transition: 0.3s linear;
 
-}
-.content__body ol{
-    /* margin-top: 30px; */
-    /* background-color: rgb(255, 112, 77,0.1) ; */
-    
-}
+}   
 .form{
-    margin: 15px 15px 15px 15px;
+    margin: 30px 15px 15px 15px;
     background-color: rgb(255, 112, 77,0.1) ;
+    order: 2;
 }
 .tabl{
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: rgb(255, 112, 77,0.1) ;
+    margin-bottom: 30px;
+    order: 3;
 }
 table,th,td{
     border: 0.5px solid ;
@@ -159,7 +146,6 @@ footer{
     .menu{
         flex-direction: row;
         margin: 15px 5px; 
-        /* margin: 15px 15px 30px 15px; */
     }
     .menu li{
         margin: 10px;
@@ -170,6 +156,12 @@ footer{
     .content{
         max-width: 960px;
         margin: 0 auto;
+    }
+    .form{
+        order: 3;
+    }
+    .tabl{
+        order:2;
     }
 }
 
